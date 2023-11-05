@@ -37,7 +37,7 @@ export default function App() {
         <Text style={{fontSize: 25, fontWeight: "bold", width: "100%", textAlign: 'center'}}>Temperature Conversion App</Text>
       </View>
       <View style={{backgroundColor: "#47C7EA", flex: 5}}>
-        <TextInput style={styles.input} placeholder={"Enter your temperature in " + temperatureType} value={temperature} onChangeText={text => setTemperature(text)}/>
+        <TextInput style={styles.input} placeholder={"Enter your temperature in " + temperatureType} value={temperature} onChangeText={text => setTemperature(text)} keyboardType='numeric'/>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
           <View style={{flex: 1, padding: 20, justifyContent: 'center'}}>
             <Switch
